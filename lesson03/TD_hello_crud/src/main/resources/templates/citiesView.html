@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cities List</title>
+</head>
+<body>
+<h2>Cities List</h2>
+<table border="1">
+    <tr>
+        <th>City</th>
+    </tr>
+    <tr th:each="city : ${cities}">
+        <td th:utext="${city}">...</td>
+    </tr>
+</table>
+</body>
+</html>
